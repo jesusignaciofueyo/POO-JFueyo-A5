@@ -51,29 +51,29 @@ public class POOJFueyoT5 {
         Box<String> boxString = new Box<>(stringList);
         boxString.almacenarEnPosicion(3, "c");
         boxString.almacenarUltimoDisponible("d");
-        boxString.devuelveAlmacenados();
         boxString.devuelvePrimero();
         boxString.devuelveUltimoExistente();
+        boxString.devuelveAlmacenados();
         
         Box<Integer> boxInteger = new Box<>(integerList);
         boxInteger.almacenarEnPosicion(3, 3);
         boxInteger.almacenarUltimoDisponible(4);
-        boxInteger.devuelveAlmacenados();
         boxInteger.devuelvePrimero();
         boxInteger.devuelveUltimoExistente();
+        boxInteger.devuelveAlmacenados();
         
         Box<Float> boxFloat = new Box<>(floatList);
         boxFloat.almacenarEnPosicion(3, 3.00f);
         boxFloat.almacenarUltimoDisponible(4.00f);
-        boxFloat.devuelveAlmacenados();
         boxFloat.devuelvePrimero();
         boxFloat.devuelveUltimoExistente();
+        boxFloat.devuelveAlmacenados();
         
         Box<Persona> boxPersona = new Box<>(personaList);
         boxPersona.almacenarEnPosicion(3, new Persona("c", "3", "Femenino"));
         boxPersona.almacenarUltimoDisponible(new Persona("d", "4", "Femenino"));
-        boxPersona.devuelveAlmacenados();
         boxPersona.devuelvePrimero();
         boxPersona.devuelveUltimoExistente();
+        boxPersona.devuelveAlmacenados();
     }
 }
