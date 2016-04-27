@@ -44,7 +44,7 @@ public class Box<T> {
         for (int i = 0; i < this.t.size(); i++) {
             if (this.t.get(i) == null) {
                 this.t.set(i, t);
-                System.out.println("En la posicion " + (i + 1) + " se almaceno el elemento: " + this.t.get(i) + "");
+                System.out.println("En la posicion: " + (i + 1) + " se almaceno el elemento: " + this.t.get(i) + "");
                 return;
             }
         }
@@ -53,9 +53,9 @@ public class Box<T> {
     public void almacenarEnPosicion(int p, T t) {
         if (p >= 0 && p < this.t.size()) {
             this.t.add(p - 1, t);
-            System.out.println("En la posicion " + p + " se almaceno el elemento: " + this.t.get(p - 1) + "");
+            System.out.println("En la posicion: " + p + " se almaceno el elemento: " + this.t.get(p - 1) + "");
         } else {
-            System.out.println("La posicion " + p + " es menor a 0 o mayor a 99.");
+            System.out.println("La posicion: " + p + " es menor a 0 o mayor a 99.");
         }
     }
 
@@ -86,7 +86,7 @@ public class Box<T> {
             for (int i = 0; i < this.t.size(); i++) {
                 if (this.t.get(99 - i) != null) {
                     //if (this.t[i - 1] != null) {
-                    System.out.println("El ultimo elemento existente esta en la posicion: " + (100 - i) + " y es el elemento " + this.t.get(99 - i));
+                    System.out.println("El ultimo elemento existente esta en la posicion: " + (100 - i) + " y es el elemento: " + this.t.get(99 - i));
                     return this.t.get(99 - i);
                     //}
                 }
